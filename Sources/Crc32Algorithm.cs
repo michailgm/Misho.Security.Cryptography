@@ -12,7 +12,7 @@ namespace Misho.Security.Cryptography
         private uint _currentCrc;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Crc32Algorithm"/> class. 
+        /// Initializes a new instance of the <see cref="ForceCrc32Algorithm"/> class. 
         /// </summary>
         public ForceCrc32Algorithm()
         {
