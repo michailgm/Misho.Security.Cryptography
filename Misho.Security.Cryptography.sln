@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misho.Security.Cryptography.Windows", "Misho.Security.Cryptography.Windows\Misho.Security.Cryptography.Windows.csproj", "{D25801F9-5990-45A4-91D3-31A0CCFD18B0}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Misho.Security.Cryptography.Core", "Misho.Security.Cryptography.Core\Misho.Security.Cryptography.Core.xproj", "{824F9A84-0472-4BB1-9B15-313C6055C630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misho.Security.Cryptography.Silverlight", "Misho.Security.Cryptography.Silverlight\Misho.Security.Cryptography.Silverlight.csproj", "{F244357F-8F19-47EF-AD89-BC077F85A3C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misho.Security.Cryptography.Android", "Misho.Security.Cryptography.Android\Misho.Security.Cryptography.Android.csproj", "{3137FD25-1C1E-4302-89FE-09F53CCFDD73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misho.Security.Cryptography.iOS", "Misho.Security.Cryptography.iOS\Misho.Security.Cryptography.iOS.csproj", "{96A52E44-0A69-4626-B16C-64C4923DA029}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D25801F9-5990-45A4-91D3-31A0CCFD18B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25801F9-5990-45A4-91D3-31A0CCFD18B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25801F9-5990-45A4-91D3-31A0CCFD18B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25801F9-5990-45A4-91D3-31A0CCFD18B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824F9A84-0472-4BB1-9B15-313C6055C630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824F9A84-0472-4BB1-9B15-313C6055C630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824F9A84-0472-4BB1-9B15-313C6055C630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824F9A84-0472-4BB1-9B15-313C6055C630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F244357F-8F19-47EF-AD89-BC077F85A3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F244357F-8F19-47EF-AD89-BC077F85A3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F244357F-8F19-47EF-AD89-BC077F85A3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F244357F-8F19-47EF-AD89-BC077F85A3C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3137FD25-1C1E-4302-89FE-09F53CCFDD73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3137FD25-1C1E-4302-89FE-09F53CCFDD73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3137FD25-1C1E-4302-89FE-09F53CCFDD73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3137FD25-1C1E-4302-89FE-09F53CCFDD73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A52E44-0A69-4626-B16C-64C4923DA029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A52E44-0A69-4626-B16C-64C4923DA029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A52E44-0A69-4626-B16C-64C4923DA029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A52E44-0A69-4626-B16C-64C4923DA029}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
