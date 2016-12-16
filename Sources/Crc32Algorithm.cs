@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace Force.Crc32
+namespace Misho.Security.Cryptography
 {
     /// <summary>
     /// Implementation of CRC-32.
     /// This class supports several convenient static methods returning the CRC as UInt32.
     /// </summary>
-    public class Crc32Algorithm : HashAlgorithm
+    public class ForceCrc32Algorithm : HashAlgorithm
     {
         private uint _currentCrc;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Crc32Algorithm"/> class. 
         /// </summary>
-        public Crc32Algorithm()
+        public ForceCrc32Algorithm()
         {
 #if !NETCORE
             HashSizeValue = 32;
@@ -89,30 +89,30 @@ namespace Force.Crc32
             _currentCrc = 0;
         }
 
-		/// <summary>
-		/// Appends CRC-32 from given buffer
-		/// </summary>
+        /// <summary>
+        /// Appends CRC-32 from given buffer
+        /// </summary>
         protected override void HashCore(byte[] input, int offset, int length)
         {
             _currentCrc = AppendInternal(_currentCrc, input, offset, length);
         }
 
-		/// <summary>
-		/// Computes CRC-32 from <see cref="HashCore"/>
-		/// </summary>
+        /// <summary>
+        /// Computes CRC-32 from <see cref="HashCore"/>
+        /// </summary>
         protected override byte[] HashFinal()
         {
-			// Crc32 by dariogriffo uses big endian, so, we need to be compatible and return big endian too
-			return new[] { (byte)(_currentCrc >> 24), (byte)(_currentCrc >> 16), (byte)(_currentCrc >> 8), (byte)_currentCrc };
+            // Crc32 by dariogriffo uses big endian, so, we need to be compatible and return big endian too
+            return new[] { (byte)(_currentCrc >> 24), (byte)(_currentCrc >> 16), (byte)(_currentCrc >> 8), (byte)_currentCrc };
         }
 
-		private static readonly SafeProxy _proxy = new SafeProxy();
+        private static readonly SafeProxy _proxy = new SafeProxy();
 
         private static uint AppendInternal(uint initial, byte[] input, int offset, int length)
         {
             if (length > 0)
             {
-                  return _proxy.Append(initial, input, offset, length);
+                return _proxy.Append(initial, input, offset, length);
             }
             else
                 return initial;
