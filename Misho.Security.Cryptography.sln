@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misho.Security.Cryptography
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misho.Security.Cryptography.iOS", "Misho.Security.Cryptography.iOS\Misho.Security.Cryptography.iOS.csproj", "{96A52E44-0A69-4626-B16C-64C4923DA029}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{F25E418E-10E6-4E51-8386-4A65876DEB02}"
+	ProjectSection(SolutionItems) = preProject
+		Sources\Crc32Algorithm.cs = Sources\Crc32Algorithm.cs
+		Sources\SafeProxy.cs = Sources\SafeProxy.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
