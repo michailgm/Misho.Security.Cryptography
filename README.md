@@ -28,3 +28,4 @@ I think about making a pull request to [Crc32](https://github.com/dariogriffo/Cr
 Api interface has been taken from [Crc32C.NET](https://crc32c.angeloflogic.com/) library. It is very handy for using in applications.
 
 ## License
+[MIT](https://github.com/force-net/Crc32.NET/blob/develop/LICENSE) license
