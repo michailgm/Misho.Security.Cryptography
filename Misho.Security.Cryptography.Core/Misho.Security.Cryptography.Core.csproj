@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <DefineConstants>$(DefineConstants);NETCORE</DefineConstants>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyName>Misho.Security.Cryptography.Core</AssemblyName>
+    <PackageId>Misho.Security.Cryptography.Core</PackageId>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Sources\BigInteger.cs" Link="BigInteger.cs" />
+    <Compile Include="..\Sources\Crc32Algorithm.cs" Link="Crc32Algorithm.cs" />
+    <Compile Include="..\Sources\SafeProxy.cs" Link="SafeProxy.cs" />
+  </ItemGroup>
+
+</Project>

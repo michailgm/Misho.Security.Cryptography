@@ -40,6 +40,9 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Sources\BigInteger.cs">
+      <Link>BigInteger.cs</Link>
+    </Compile>
     <Compile Include="..\Sources\Crc32Algorithm.cs">
       <Link>Crc32Algorithm.cs</Link>
     </Compile>
