@@ -15,7 +15,8 @@
 
   <ItemGroup>
     <Compile Include="..\Sources\BigInteger.cs" Link="BigInteger.cs" />
-    <Compile Include="..\Sources\Crc32Algorithm.cs" Link="Crc32Algorithm.cs" />
+    <Compile Include="..\Sources\DamiengCrc32.cs" Link="DamiengCrc32.cs" />
+    <Compile Include="..\Sources\ForceCrc32.cs" Link="ForceCrc32.cs" />
     <Compile Include="..\Sources\SafeProxy.cs" Link="SafeProxy.cs" />
   </ItemGroup>
 

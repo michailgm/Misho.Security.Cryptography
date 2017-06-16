@@ -46,8 +46,11 @@
     <Compile Include="..\Sources\BigInteger.cs">
       <Link>BigInteger.cs</Link>
     </Compile>
-    <Compile Include="..\Sources\Crc32Algorithm.cs">
-      <Link>Crc32Algorithm.cs</Link>
+    <Compile Include="..\Sources\DamiengCrc32.cs">
+      <Link>DamiengCrc32.cs</Link>
+    </Compile>
+    <Compile Include="..\Sources\ForceCrc32.cs">
+      <Link>ForceCrc32.cs</Link>
     </Compile>
     <Compile Include="..\Sources\SafeProxy.cs">
       <Link>SafeProxy.cs</Link>

@@ -7,14 +7,14 @@ namespace Misho.Security.Cryptography
     /// Implementation of CRC-32.
     /// This class supports several convenient static methods returning the CRC as UInt32.
     /// </summary>
-    public class ForceCrc32Algorithm : HashAlgorithm
+    public class ForceCrc32 : HashAlgorithm
     {
         private uint _currentCrc;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ForceCrc32Algorithm"/> class. 
+        /// Initializes a new instance of the <see cref="ForceCrc32"/> class. 
         /// </summary>
-        public ForceCrc32Algorithm()
+        public ForceCrc32()
         {
 #if !NETCORE
             HashSizeValue = 32;

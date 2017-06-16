@@ -14,7 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{F25E418E-10E6-4E51-8386-4A65876DEB02}"
 	ProjectSection(SolutionItems) = preProject
 		Sources\BigInteger.cs = Sources\BigInteger.cs
-		Sources\Crc32Algorithm.cs = Sources\Crc32Algorithm.cs
+		Sources\DamiengCrc32.cs = Sources\DamiengCrc32.cs
+		Sources\ForceCrc32.cs = Sources\ForceCrc32.cs
 		Sources\SafeProxy.cs = Sources\SafeProxy.cs
 	EndProjectSection
 EndProject
