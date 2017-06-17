@@ -245,6 +245,11 @@ namespace Misho.Security.Cryptography
             return ~CalculateHash(InitializeTable(polynomial), seed, buffer, 0, buffer.Length);
         }
 
+        /// <summary>
+        /// InitializeTable
+        /// </summary>
+        /// <param name="polynomial"></param>
+        /// <returns></returns>
         public static UInt32[] InitializeTable(UInt32 polynomial)
         {
             if (polynomial == DefaultPolynomial && defaultTable != null)
@@ -268,6 +273,15 @@ namespace Misho.Security.Cryptography
             return createTable;
         }
 
+        /// <summary>
+        /// CalculateHash
+        /// </summary>
+        /// <param name="table"></param>
+        /// <param name="seed"></param>
+        /// <param name="buffer"></param>
+        /// <param name="start"></param>
+        /// <param name="size"></param>
+        /// <returns></returns>
         public static UInt32 CalculateHash(UInt32[] table, UInt32 seed, IList<byte> buffer, int start, int size)
         {
             var hash = seed;
@@ -276,6 +290,11 @@ namespace Misho.Security.Cryptography
             return hash;
         }
 
+        /// <summary>
+        /// UInt32ToBigEndianBytes
+        /// </summary>
+        /// <param name="uint32"></param>
+        /// <returns></returns>
         public static byte[] UInt32ToBigEndianBytes(UInt32 uint32)
         {
             var result = BitConverter.GetBytes(uint32);
